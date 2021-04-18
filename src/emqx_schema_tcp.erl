@@ -8,8 +8,7 @@
 %%%-------------------------------------------------------------------
 -module(emqx_schema_tcp).
 -author("root").
-
--module(emqx_schema_tcp).
+-include(../include/emqx_schema_registry.hrl).
 -behaviour(gen_statem).
 
 -export([start_link/3, close/1, make_parser/4, status/1]).
